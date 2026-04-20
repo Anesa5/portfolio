@@ -1,0 +1,349 @@
+/* Your original styles - KEPT EXACTLY AS IS */
+.qualification__section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.qualification__title {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.qualification__subtitle {
+    font-size: 0.9rem;
+    color: gray;
+}
+
+.qualification__calendar {
+    font-size: 0.8rem;
+    color: #7d8da1;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.25rem;
+    margin-left: 85px;
+}
+
+.qualification__container {
+    margin-top: 2rem;
+}
+
+.qualification__tabs {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.qualification__button {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.3s;
+    color: #333;
+}
+
+.qualification__button .qualification__icon {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.qualification__button:hover {
+    color: #00bcd4;
+}
+
+.qualification__button.qualification__active {
+    color: #00bcd4;
+    border-bottom: 2px solid #00bcd4;
+}
+
+.qualification__sections {
+    display: flex;
+    justify-content: center;
+}
+
+.qualification__content {
+    display: none;
+    max-width: 700px;
+    width: 100%;
+}
+
+.qualification__content.qualification__active {
+    display: block;
+}
+
+.qualification__data {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    align-items: flex-start;
+}
+
+.qualification__rounder {
+    width: 12px;
+    height: 12px;
+    background-color: #00bcd4;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.qualification__line {
+    width: 2px;
+    height: 100%;
+    background-color: #00bcd4;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ========== ADDED MOBILE RESPONSIVE STYLES ========== */
+
+/* Tablet Devices (768px to 991px) */
+@media (max-width: 991px) {
+    .qualification__section {
+        padding: 1.5rem;
+    }
+
+    .qualification__container {
+        margin-top: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .qualification__tabs {
+        gap: 1.5rem;
+    }
+
+    .qualification__button {
+        font-size: 0.95rem;
+    }
+
+    .qualification__data {
+        gap: 1.5rem;
+        margin-bottom: 1.8rem;
+    }
+
+    .qualification__calendar {
+        margin-left: 40px;
+    }
+}
+
+/* Mobile Devices (576px to 767px) */
+@media (max-width: 767px) {
+    .qualification__section {
+        padding: 1rem;
+    }
+
+    .section__title {
+        font-size: 1.8rem;
+    }
+
+    .section__subtitle {
+        font-size: 0.9rem;
+    }
+
+    .qualification__container {
+        margin-top: 1.2rem;
+        padding: 0 0.8rem;
+    }
+
+    .qualification__tabs {
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .qualification__button {
+        font-size: 0.85rem;
+    }
+
+    .qualification__button .qualification__icon {
+        font-size: 1rem;
+        margin-right: 0.3rem;
+    }
+
+    .qualification__content {
+        max-width: 100%;
+    }
+
+    .qualification__data {
+        grid-template-columns: 1fr max-content 1fr;
+        gap: 0.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .qualification__title {
+        font-size: 0.95rem;
+    }
+
+    .qualification__subtitle {
+        font-size: 0.8rem;
+    }
+
+    .qualification__calendar {
+        font-size: 0.7rem;
+        margin-left: 20px;
+        gap: 0.3rem;
+    }
+
+    .qualification__rounder {
+        width: 10px;
+        height: 10px;
+    }
+
+    .qualification__line {
+        width: 1.5px;
+    }
+}
+
+/* Small Mobile Devices (up to 575px) */
+@media (max-width: 575px) {
+    .qualification__section {
+        padding: 0.8rem;
+    }
+
+    .section__title {
+        font-size: 1.5rem;
+    }
+
+    .section__subtitle {
+        font-size: 0.8rem;
+    }
+
+    .qualification__container {
+        margin-top: 1rem;
+        padding: 0 0.5rem;
+    }
+
+    .qualification__tabs {
+        gap: 0.8rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .qualification__button {
+        font-size: 0.75rem;
+    }
+
+    .qualification__button .qualification__icon {
+        font-size: 0.9rem;
+        margin-right: 0.25rem;
+    }
+
+    .qualification__data {
+        grid-template-columns: 1fr max-content 1fr;
+        gap: 0.5rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .qualification__title {
+        font-size: 0.85rem;
+    }
+
+    .qualification__subtitle {
+        font-size: 0.7rem;
+    }
+
+    .qualification__calendar {
+        font-size: 0.65rem;
+        margin-left: 10px;
+        gap: 0.2rem;
+        flex-wrap: wrap;
+    }
+
+    .qualification__rounder {
+        width: 8px;
+        height: 8px;
+    }
+
+    .qualification__line {
+        width: 1px;
+    }
+}
+
+/* Extra Small Devices (up to 380px) */
+@media (max-width: 380px) {
+    .qualification__tabs {
+        gap: 0.5rem;
+    }
+
+    .qualification__button {
+        font-size: 0.7rem;
+    }
+
+    .qualification__button .qualification__icon {
+        font-size: 0.8rem;
+    }
+
+    .qualification__data {
+        gap: 0.3rem;
+    }
+
+    .qualification__title {
+        font-size: 0.75rem;
+    }
+
+    .qualification__subtitle {
+        font-size: 0.65rem;
+    }
+
+    .qualification__calendar {
+        font-size: 0.6rem;
+        margin-left: 5px;
+    }
+}
+
+/* Landscape Mode for Mobile */
+@media (max-width: 767px) and (orientation: landscape) {
+    .qualification__section {
+        padding: 0.8rem;
+    }
+
+    .qualification__data {
+        margin-bottom: 1rem;
+    }
+
+    .qualification__title {
+        font-size: 0.85rem;
+    }
+
+    .qualification__subtitle {
+        font-size: 0.75rem;
+    }
+}
+
+/* Dark mode support for qualification section */
+.dark-mode .qualification__section {
+    background-color: #121212;
+}
+
+.dark-mode .qualification__title {
+    color: #ffffff;
+}
+
+.dark-mode .qualification__subtitle {
+    color: #bbbbbb;
+}
+
+.dark-mode .qualification__calendar {
+    color: #888888;
+}
+
+.dark-mode .qualification__button {
+    color: #ffffff;
+}
+
+.dark-mode .qualification__button:hover {
+    color: #00bcd4;
+}
+
+.dark-mode .qualification__button.qualification__active {
+    color: #00bcd4;
+}
+
+.dark-mode .qualification__rounder {
+    background-color: #00bcd4;
+}
+
+.dark-mode .qualification__line {
+    background-color: #00bcd4;
+}

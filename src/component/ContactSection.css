@@ -1,0 +1,30 @@
+.contact-wrapper {
+    display: flex;
+    margin: 50px 0;
+    margin-top: 140px;
+
+}
+
+.contact-box {
+    width: 60%;
+    background-color: #3d9dbd;
+    /* light blue */
+    border-radius: 15px;
+    text-align: left;
+}
+
+.contact-btn {
+    background-color: white !important;
+    color: #5fa2e9 !important;
+    /* light blue text */
+    border: none;
+    font-weight: bold;
+    padding: 20px 20px;
+
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #e6f2fb;
+    color: #0056b3;
+}

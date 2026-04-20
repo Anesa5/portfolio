@@ -1,0 +1,497 @@
+/* Your original styles - KEPT EXACTLY AS IS */
+.navbar-dark .navbar-nav .nav-link {
+    color: black !important;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: black !important;
+    font-weight: bold;
+}
+
+.three-column-section {
+    padding: 90px;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+
+}
+
+.social-icon {
+    font-size: 20px;
+}
+
+.fb {
+    color: #93d1f7;
+}
+
+.insta {
+    color: #93d1f7;
+}
+
+.twitter {
+    color: #93d1f7;
+}
+
+.middle-column {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: -200px;
+}
+
+.middle-column h2 {
+    align-items: left;
+    margin-left: -117px;
+    font-size: xx-large;
+    font-size: 55px;
+    font-weight: bolder;
+}
+
+.middle-column p {
+    max-width: 300px;
+    margin-left: -50px;
+}
+
+.telegram-btn {
+    margin-top: 10px;
+    color: white;
+    background-color: #93d1f7;
+    margin-left: -200px;
+}
+
+.right-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.oval-image {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 70%;
+    border-bottom-right-radius: 70%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.my-section {
+    background-color: #f8f9fa;
+}
+
+.main-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.main-paragraph {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.responsive-image {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.left-paragraph {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 20px;
+    margin-left: -60px;
+    text-align: left;
+}
+
+.feature-heading {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #007bff;
+}
+
+.feature-description {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.feature-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+    color: #222;
+    margin-left: -70px;
+}
+
+.feature-description {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 0;
+    color: #555;
+    margin-left: -70px;
+}
+
+.feature-col {
+    padding-right: 15px;
+}
+
+.left-button {
+    display: block;
+    margin-left: -570px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.accordion-button {
+    font-weight: 500;
+}
+
+.progress {
+    height: 20px;
+}
+
+.progress-bar {
+    font-size: 0.8rem;
+}
+
+.custom-progress {
+    height: 6px;
+    border-radius: 10px;
+}
+
+/* Dark mode body styles */
+body.dark-mode {
+    background-color: #121212 !important;
+    color: #ffffff !important;
+}
+
+/* Accordion header button dark mode */
+.dark-mode .accordion-button {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+}
+
+.dark-mode .accordion-button:not(.collapsed) {
+    background-color: #2d2d2d !important;
+    color: #ffffff !important;
+}
+
+.dark-mode .accordion-button::after {
+    filter: invert(1);
+}
+
+/* Card and container dark mode */
+.dark-mode .card {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+}
+
+/* Smooth transition for all elements */
+* {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ========== ADDED MOBILE RESPONSIVE STYLES ========== */
+/* Keep your original styles above, these are added below */
+
+/* Tablet and Mobile Devices (up to 1200px) */
+@media (max-width: 1200px) {
+    .three-column-section {
+        padding: 60px 30px;
+    }
+
+    .middle-column {
+        margin-left: -100px;
+    }
+
+    .middle-column h2 {
+        margin-left: -60px;
+        font-size: 45px;
+    }
+
+    .telegram-btn {
+        margin-left: -100px;
+    }
+
+    .left-button {
+        margin-left: -400px;
+    }
+}
+
+/* Tablet Devices (768px to 991px) */
+@media (max-width: 991px) {
+    .three-column-section {
+        padding: 40px 20px;
+    }
+
+    .middle-column {
+        margin-left: 0;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .middle-column h2 {
+        margin-left: 0;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .middle-column p {
+        margin-left: 0;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .telegram-btn {
+        margin-left: 0;
+    }
+
+    .left-paragraph {
+        margin-left: 0;
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .feature-heading {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .feature-description {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .left-button {
+        margin-left: 0;
+        margin: 20px auto;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .my-section {
+        padding: 40px 20px;
+    }
+
+    .responsive-image {
+        max-width: 280px;
+        margin-bottom: 20px;
+    }
+
+    .feature-heading {
+        font-size: 1.8rem;
+    }
+
+    .feature-description {
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile Devices (576px to 767px) */
+@media (max-width: 767px) {
+    .three-column-section {
+        padding: 30px 15px;
+    }
+
+    .left-column {
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        margin: 20px 0;
+    }
+
+    .social-icon {
+        font-size: 24px;
+    }
+
+    .middle-column h2 {
+        font-size: 32px;
+    }
+
+    .middle-column p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .oval-image {
+        width: 160px;
+        height: 200px;
+        margin-top: 20px;
+    }
+
+    .main-heading {
+        font-size: 2rem;
+    }
+
+    .main-paragraph {
+        font-size: 1rem;
+    }
+
+    .left-paragraph {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .feature-heading {
+        font-size: 1.5rem;
+    }
+
+    .feature-description {
+        font-size: 0.8rem;
+    }
+
+    .telegram-btn,
+    .left-button {
+        width: 80%;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .accordion-button {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .progress {
+        height: 15px;
+    }
+
+    .progress-bar {
+        font-size: 0.7rem;
+    }
+}
+
+/* Small Mobile Devices (up to 575px) */
+@media (max-width: 575px) {
+    .three-column-section {
+        padding: 20px 10px;
+    }
+
+    .middle-column h2 {
+        font-size: 28px;
+    }
+
+    .middle-column p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .oval-image {
+        width: 140px;
+        height: 180px;
+    }
+
+    .main-heading {
+        font-size: 1.8rem;
+    }
+
+    .main-paragraph {
+        font-size: 0.9rem;
+    }
+
+    .left-paragraph {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .feature-heading {
+        font-size: 1.3rem;
+    }
+
+    .feature-description {
+        font-size: 0.7rem;
+    }
+
+    .telegram-btn,
+    .left-button {
+        width: 90%;
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .accordion-button {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .accordion-body {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .social-icon {
+        font-size: 20px;
+        gap: 20px;
+    }
+
+    .left-column {
+        gap: 20px;
+    }
+
+    .responsive-image {
+        max-width: 220px;
+    }
+}
+
+/* Dark mode responsive adjustments */
+@media (max-width: 767px) {
+    body.dark-mode {
+        background-color: #121212 !important;
+    }
+
+    .dark-mode .accordion-button {
+        font-size: 13px;
+    }
+
+    .dark-mode .accordion-body {
+        font-size: 12px;
+    }
+}
+
+/* Landscape mode for mobile devices */
+@media (max-width: 767px) and (orientation: landscape) {
+    .three-column-section {
+        padding: 20px;
+    }
+
+    .oval-image {
+        width: 120px;
+        height: 150px;
+    }
+
+    .middle-column h2 {
+        font-size: 28px;
+    }
+
+    .left-column {
+        gap: 15px;
+    }
+}
+
+/* Extra Large Devices (1200px and above) - Keep your original styles */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}

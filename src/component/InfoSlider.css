@@ -1,0 +1,183 @@
+/* Your original styles here if any */
+/* If you have existing styles, keep them above */
+
+/* ========== RESPONSIVE STYLES FOR INFO SLIDER ========== */
+
+/* Tablet Devices (768px to 991px) */
+@media (max-width: 991px) {
+    .carousel-item .row {
+        padding: 0 20px;
+    }
+
+    .carousel-item img {
+        max-width: 80% !important;
+        margin-bottom: 20px;
+    }
+
+    .carousel-item h4 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-item p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile Devices (576px to 767px) */
+@media (max-width: 767px) {
+    .carousel-item .row {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .carousel-item img {
+        max-width: 90% !important;
+        margin: 0 auto 20px auto;
+    }
+
+    .carousel-item h4 {
+        font-size: 1.3rem;
+        margin-top: 10px;
+    }
+
+    .carousel-item p {
+        font-size: 0.85rem;
+        padding: 0 10px;
+    }
+
+    .carousel-item button {
+        margin-bottom: 20px;
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+
+    /* Make carousel controls more touch-friendly */
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 10%;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Small Mobile Devices (up to 575px) */
+@media (max-width: 575px) {
+    .carousel-item img {
+        max-width: 100% !important;
+        max-height: 200px !important;
+    }
+
+    .carousel-item h4 {
+        font-size: 1.1rem;
+    }
+
+    .carousel-item p {
+        font-size: 0.75rem;
+        line-height: 1.4;
+    }
+
+    .carousel-item button {
+        font-size: 0.8rem;
+        padding: 6px 15px;
+    }
+
+    .carousel-item br {
+        display: none;
+        /* Remove line breaks on very small screens */
+    }
+
+    .my-5 {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+    }
+
+    .mb-5 {
+        margin-bottom: 1.5rem !important;
+    }
+}
+
+/* Extra Small Devices (up to 380px) */
+@media (max-width: 380px) {
+    .carousel-item h4 {
+        font-size: 1rem;
+    }
+
+    .carousel-item p {
+        font-size: 0.7rem;
+    }
+
+    .carousel-item button {
+        font-size: 0.7rem;
+        padding: 5px 12px;
+    }
+}
+
+/* Landscape Mode for Mobile */
+@media (max-width: 767px) and (orientation: landscape) {
+    .carousel-item .row {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .carousel-item img {
+        max-width: 80% !important;
+        max-height: 180px !important;
+    }
+
+    .carousel-item h4 {
+        font-size: 1.1rem;
+    }
+
+    .carousel-item p {
+        font-size: 0.75rem;
+    }
+}
+
+/* Dark mode support for slider */
+.dark-mode .carousel-item h4 {
+    color: #ffffff;
+}
+
+.dark-mode .carousel-item p {
+    color: #cccccc;
+}
+
+.dark-mode .carousel-control-prev-icon,
+.dark-mode .carousel-control-next-icon {
+    filter: invert(1);
+}
+
+/* Carousel indicator dots responsive */
+.carousel-indicators {
+    margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .carousel-indicators {
+        bottom: -20px;
+    }
+
+    .carousel-indicators button {
+        width: 8px !important;
+        height: 8px !important;
+        margin: 0 4px !important;
+    }
+}
+
+/* Smooth transitions */
+.carousel-item img,
+.carousel-item button {
+    transition: all 0.3s ease;
+}
+
+/* Hover effects for buttons on desktop */
+@media (min-width: 768px) {
+    .carousel-item button:hover {
+        transform: translateX(5px);
+    }
+}
