@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import Home from './component/Home'
 import "bootstrap/dist/css/bootstrap.min.css";
 import InfoCards from "./component/InfoCards";
